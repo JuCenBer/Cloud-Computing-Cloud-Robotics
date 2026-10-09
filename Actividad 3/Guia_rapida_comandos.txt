@@ -1,0 +1,114 @@
+GUIA RAPIDA - SimuPi y Node-RED en AWS EC2 (Debian 13)
+(comandos para copiar y pegar, solo caracteres ASCII)
+
+### Bloque 1
+sudo apt update
+sudo apt install -y git
+
+### Bloque 2
+git clone https://github.com/seguren/simupi.git
+cd simupi
+
+### Bloque 3
+chmod +x bin/simupi-linux-amd64
+nohup ./bin/simupi-linux-amd64 > simupi.log 2>&1 &
+
+### Bloque 4
+curl http://localhost:5000/api/health
+ss -ltn | grep -E ':(1883|5000) '
+
+### Bloque 5
+hostname -I
+
+### Bloque 6
+tail -f ~/simupi/simupi.log
+
+### Bloque 7
+pkill -f simupi-linux-amd64
+
+### Bloque 8
+cd ~/simupi
+nohup ./bin/simupi-linux-amd64 > simupi.log 2>&1 &
+
+### Bloque 9
+sudo apt update
+sudo apt install -y ca-certificates curl gnupg
+
+### Bloque 10
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg \
+  -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+### Bloque 11
+sudo tee /etc/apt/sources.list.d/docker.sources > /dev/null <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/debian
+Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
+Components: stable
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+### Bloque 12
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io \
+  docker-buildx-plugin docker-compose-plugin
+
+### Bloque 13
+sudo usermod -aG docker $USER
+
+### Bloque 14
+newgrp docker
+
+### Bloque 15
+docker --version
+docker compose version
+
+### Bloque 16
+mkdir -p ~/nodered/data
+cd ~/nodered
+sudo chown -R 1000:1000 data
+
+### Bloque 17
+cat > docker-compose.yml <<'EOF'
+services:
+  nodered:
+    image: nodered/node-red:latest
+    container_name: nodered
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - ./data:/data
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+EOF
+
+### Bloque 18
+docker compose config -q
+
+### Bloque 19
+docker compose up -d
+docker compose ps
+docker compose logs -f
+
+### Bloque 20
+docker exec -w /data nodered npm install @flowfuse/node-red-dashboard
+docker restart nodered
+
+### Bloque 21
+timeout 3 bash -c '</dev/tcp/IP_PRIVADA_DE_A/1883' && echo CONECTA || echo SIN_CONEXION
+
+### Bloque 22
+cd ~/nodered
+docker compose restart
+docker compose logs --tail 50
+docker compose down
+
+### Bloque 23
+tar -czvf backup_nodered.tar.gz ~/nodered/data
+
