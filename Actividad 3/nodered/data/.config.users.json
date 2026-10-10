@@ -30,8 +30,9 @@
                                 "context",
                                 "dashboard-2.0"
                             ],
-                            "hidden": true,
-                            "active": null
+                            "hidden": false,
+                            "active": "config",
+                            "height": 301.857792
                         },
                         "bottom": {
                             "tabs": [
@@ -47,7 +48,7 @@
                             "tabs": [
                                 "explorer"
                             ],
-                            "height": 301.871792,
+                            "height": 202.85979200000003,
                             "hidden": false,
                             "active": "explorer"
                         },
@@ -59,6 +60,12 @@
                             "active": "palette"
                         }
                     }
+                }
+            },
+            "dialog": {
+                "export": {
+                    "pretty": true,
+                    "json-view": true
                 }
             }
         }

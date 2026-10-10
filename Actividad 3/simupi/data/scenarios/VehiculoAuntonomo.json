@@ -1,0 +1,44 @@
+{
+  "name": "VehiculoAuntonomo",
+  "inputs": [
+    1
+  ],
+  "outputs": [
+    2,
+    3
+  ],
+  "aliases": {
+    "1": "Activar Luces",
+    "2": "Obstáculo Detectado",
+    "3": "Destino alcanzado"
+  },
+  "sensors": {
+    "direccion": {
+      "mode": "walk",
+      "min": 0,
+      "max": 359.9,
+      "interval": 1,
+      "period": 60,
+      "unit": "°",
+      "pin": 6
+    },
+    "luz": {
+      "mode": "walk",
+      "min": 0,
+      "max": 100,
+      "interval": 1,
+      "period": 60,
+      "unit": "%",
+      "pin": 5
+    },
+    "velocidad": {
+      "mode": "walk",
+      "min": 0,
+      "max": 100,
+      "interval": 1,
+      "step": 2,
+      "unit": "%",
+      "pin": 4
+    }
+  }
+}

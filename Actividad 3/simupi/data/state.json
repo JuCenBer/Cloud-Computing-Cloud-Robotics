@@ -1,16 +1,16 @@
 {
   "gpio_inputs": {
-    "17": 0,
-    "18": 0
+    "1": 0
   },
   "gpio_outputs": {
-    "22": 0,
-    "24": 0
+    "2": 0,
+    "3": 0
   },
   "sensors": {
-    "humidity": 36.89651374425452,
-    "temperature": 33.749437578861134
+    "direccion": 309.41983932538324,
+    "luz": 62.4584549962962,
+    "velocidad": 92.7347397597278
   },
-  "scenario": "Greenhouse",
+  "scenario": "VehiculoAuntonomo",
   "failures": {}
 }

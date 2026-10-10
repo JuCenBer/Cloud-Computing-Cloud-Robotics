@@ -1,13 +1,5 @@
 [
     {
-        "id": "5186f47d8d6b09c2",
-        "type": "tab",
-        "label": "Flujo 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "5c3a9e1100003dde",
         "type": "tab",
         "label": "Invernadero (greenhouse)",
@@ -27,6 +19,14 @@
         "label": "Garage (garage)",
         "disabled": false,
         "info": "Escenario SimuPi \"garage\". Página del dashboard: /garage"
+    },
+    {
+        "id": "89a908a1803bbf6a",
+        "type": "tab",
+        "label": "Vehiculo",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
         "id": "5c3a9e110003dde0",
@@ -49,10 +49,10 @@
             "5c3a9e110001b112",
             "5c3a9e110001d001"
         ],
-        "x": 33,
-        "y": 40,
-        "w": 548,
-        "h": 310
+        "x": 34,
+        "y": 39,
+        "w": 572,
+        "h": 322
     },
     {
         "id": "5c3a9e110003fccf",
@@ -75,10 +75,10 @@
             "5c3a9e110002a88a",
             "5c3a9e110002c779"
         ],
-        "x": 55,
-        "y": 440,
-        "w": 759,
-        "h": 210
+        "x": 54,
+        "y": 439,
+        "w": 762,
+        "h": 222
     },
     {
         "id": "5c3a9e1100041bbe",
@@ -101,10 +101,10 @@
             "5c3a9e110003a002",
             "5c3a9e110003bef1"
         ],
-        "x": 63,
-        "y": 760,
-        "w": 664,
-        "h": 190
+        "x": 64,
+        "y": 759,
+        "w": 672,
+        "h": 202
     },
     {
         "id": "5c3a9e110008d227",
@@ -127,10 +127,10 @@
             "5c3a9e110005ade1",
             "5c3a9e110005ccd0"
         ],
-        "x": 33,
-        "y": 40,
-        "w": 548,
-        "h": 310
+        "x": 34,
+        "y": 39,
+        "w": 572,
+        "h": 322
     },
     {
         "id": "5c3a9e110008f116",
@@ -157,10 +157,10 @@
             "5c3a9e1100072115",
             "5c3a9e1100074004"
         ],
-        "x": 40,
-        "y": 440,
-        "w": 789,
-        "h": 310
+        "x": 44,
+        "y": 439,
+        "w": 782,
+        "h": 322
     },
     {
         "id": "5c3a9e1100091005",
@@ -187,10 +187,10 @@
             "5c3a9e1100089449",
             "5c3a9e110008b338"
         ],
-        "x": 63,
-        "y": 860,
-        "w": 664,
-        "h": 270
+        "x": 64,
+        "y": 859,
+        "w": 672,
+        "h": 282
     },
     {
         "id": "5c3a9e11000ccef6",
@@ -210,9 +210,9 @@
             "5c3a9e11000a455b"
         ],
         "x": 44,
-        "y": 40,
-        "w": 525,
-        "h": 150
+        "y": 39,
+        "w": 542,
+        "h": 162
     },
     {
         "id": "5c3a9e11000cede5",
@@ -235,10 +235,10 @@
             "5c3a9e11000b1de4",
             "5c3a9e11000b3cd3"
         ],
-        "x": 70,
-        "y": 280,
-        "w": 729,
-        "h": 210
+        "x": 64,
+        "y": 279,
+        "w": 742,
+        "h": 222
     },
     {
         "id": "5c3a9e11000d0cd4",
@@ -265,10 +265,96 @@
             "5c3a9e11000c9118",
             "5c3a9e11000cb007"
         ],
-        "x": 63,
-        "y": 600,
-        "w": 664,
-        "h": 270
+        "x": 64,
+        "y": 599,
+        "w": 672,
+        "h": 282
+    },
+    {
+        "id": "efe2cb98929d8697",
+        "type": "group",
+        "z": "89a908a1803bbf6a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "3615da770f2b7d09",
+            "9011997a0745747b",
+            "bdac028bb3370189",
+            "75de7ce13f3f34d6",
+            "2ba9ed080859baa6",
+            "260e26089a16115a",
+            "1269f879ca6756b1",
+            "171ffbecc083d83c",
+            "9185aa88e8d9e569",
+            "17b7ac6aa3f24eb3",
+            "d0fc7e1229f668ad",
+            "5bef27a6109939ed",
+            "0bfa6fa12120f367",
+            "57159cecf24995df",
+            "4649d3630e8a11ef",
+            "c9ffa866724bbe61"
+        ],
+        "x": 54,
+        "y": 99,
+        "w": 1032,
+        "h": 382
+    },
+    {
+        "id": "375dc293c556f4c6",
+        "type": "group",
+        "z": "89a908a1803bbf6a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "95ac254ecb746c58",
+            "e9b9227beecdcb1d",
+            "a3b9d3a493121048",
+            "86b894c16230769f",
+            "95a2a8e61cd8624d",
+            "92ac2efb2e794893"
+        ],
+        "x": 54,
+        "y": 539,
+        "w": 512,
+        "h": 242
+    },
+    {
+        "id": "cb27a147c7598c3a",
+        "type": "group",
+        "z": "89a908a1803bbf6a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "08443980b781f1a5",
+            "fa6fc5e3b3765d17",
+            "773021891624210c",
+            "5345fa985418afd9"
+        ],
+        "x": 54,
+        "y": 819,
+        "w": 652,
+        "h": 122
     },
     {
         "id": "5c3a9e1100001eef",
@@ -615,6 +701,104 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
+    },
+    {
+        "id": "5eec0f11f05bf14e",
+        "type": "ui-page",
+        "name": "Vehiculo",
+        "ui": "ab4fe6737c7cd34d",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "cca9ccd2dd6165f2",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "35f4fb8641d8c4ac",
+        "type": "ui-group",
+        "d": true,
+        "name": "",
+        "page": "5eec0f11f05bf14e",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "4292c21a6b323746",
+        "type": "ui-group",
+        "name": "Sensores",
+        "page": "5eec0f11f05bf14e",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "0b75aed34a62a278",
+        "type": "ui-group",
+        "name": "Actuadores",
+        "page": "5eec0f11f05bf14e",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "fcec81963cbf486d",
+        "type": "ui-group",
+        "name": "Entradas",
+        "page": "5eec0f11f05bf14e",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
     },
     {
         "id": "5c3a9e110000f778",
@@ -2747,6 +2931,712 @@
         "statusType": "auto",
         "x": 400,
         "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3615da770f2b7d09",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "sensor/velocidad",
+        "topic": "sensor/velocidad",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5c3a9e1100001eef",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "75de7ce13f3f34d6",
+                "2ba9ed080859baa6",
+                "d0fc7e1229f668ad"
+            ]
+        ]
+    },
+    {
+        "id": "9011997a0745747b",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "sensor/luz",
+        "topic": "sensor/luz",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5c3a9e1100001eef",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "260e26089a16115a",
+                "1269f879ca6756b1"
+            ]
+        ]
+    },
+    {
+        "id": "bdac028bb3370189",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "sensor/direccion",
+        "topic": "sensor/direccion",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5c3a9e1100001eef",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "171ffbecc083d83c",
+                "9185aa88e8d9e569"
+            ]
+        ]
+    },
+    {
+        "id": "75de7ce13f3f34d6",
+        "type": "ui-gauge",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Velocidad",
+        "group": "4292c21a6b323746",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Velocidad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "kph",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#29c733",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#ffbd2e",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#f92424",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 420,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ba9ed080859baa6",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "velocidad debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "260e26089a16115a",
+        "type": "ui-gauge",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Nivel de Luz",
+        "group": "4292c21a6b323746",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Nivel de Luz",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#c72929",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffbd2e",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#24f93d",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "0bfa6fa12120f367"
+            ]
+        ]
+    },
+    {
+        "id": "1269f879ca6756b1",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "luz debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "171ffbecc083d83c",
+        "type": "ui-gauge",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Dirección",
+        "group": "4292c21a6b323746",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Dirección",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-180",
+                "color": "#995cd6",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "0",
+                "color": "#1baede",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-180",
+        "max": "180",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 420,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9185aa88e8d9e569",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "dirección debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "95ac254ecb746c58",
+        "type": "ui-switch",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "Activar Luces",
+        "label": "Activar Luces",
+        "group": "0b75aed34a62a278",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "e9b9227beecdcb1d",
+                "a3b9d3a493121048"
+            ]
+        ]
+    },
+    {
+        "id": "e9b9227beecdcb1d",
+        "type": "mqtt out",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "",
+        "topic": "gpio/out/2",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c3a9e1100001eef",
+        "x": 440,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "a3b9d3a493121048",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "luces debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "86b894c16230769f",
+        "type": "ui-switch",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "Modo Ciudad",
+        "label": "Modo Ciudad",
+        "group": "0b75aed34a62a278",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "95a2a8e61cd8624d",
+                "92ac2efb2e794893"
+            ]
+        ]
+    },
+    {
+        "id": "95a2a8e61cd8624d",
+        "type": "mqtt out",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "",
+        "topic": "gpio/out/3",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c3a9e1100001eef",
+        "x": 440,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "92ac2efb2e794893",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "375dc293c556f4c6",
+        "name": "modo debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "08443980b781f1a5",
+        "type": "ui-text",
+        "z": "89a908a1803bbf6a",
+        "g": "cb27a147c7598c3a",
+        "group": "fcec81963cbf486d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Destino Alcanzado",
+        "label": "Destino Alcanzado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 590,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fa6fc5e3b3765d17",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "g": "cb27a147c7598c3a",
+        "name": "",
+        "topic": "gpio/in/1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5c3a9e1100001eef",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "5345fa985418afd9",
+                "773021891624210c"
+            ]
+        ]
+    },
+    {
+        "id": "773021891624210c",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "g": "cb27a147c7598c3a",
+        "name": "destino debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "5345fa985418afd9",
+        "type": "function",
+        "z": "89a908a1803bbf6a",
+        "g": "cb27a147c7598c3a",
+        "name": "0/1 → texto",
+        "func": "msg.payload = String(msg.payload) === '1' ? 'Alcanzado (1)' : 'No alcanzado (0)';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 860,
+        "wires": [
+            [
+                "08443980b781f1a5"
+            ]
+        ]
+    },
+    {
+        "id": "17b7ac6aa3f24eb3",
+        "type": "ui-notification",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "ui": "ab4fe6737c7cd34d",
+        "position": "top center",
+        "colorDefault": false,
+        "color": "#f74545",
+        "displayTime": "5",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": false,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 900,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d0fc7e1229f668ad",
+        "type": "switch",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Control Velocidad",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "80",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 220,
+        "wires": [
+            [
+                "5bef27a6109939ed"
+            ]
+        ]
+    },
+    {
+        "id": "5bef27a6109939ed",
+        "type": "change",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Establece mensaje",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"Alerta. Velocidad alta alcanzada\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "17b7ac6aa3f24eb3"
+            ]
+        ]
+    },
+    {
+        "id": "0bfa6fa12120f367",
+        "type": "switch",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Control Luz",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "40",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "45",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 280,
+        "wires": [
+            [
+                "57159cecf24995df"
+            ],
+            [
+                "4649d3630e8a11ef"
+            ]
+        ]
+    },
+    {
+        "id": "57159cecf24995df",
+        "type": "change",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Prende Luz",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            [
+                "c9ffa866724bbe61"
+            ]
+        ]
+    },
+    {
+        "id": "4649d3630e8a11ef",
+        "type": "change",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "Apaga Luz",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 320,
+        "wires": [
+            [
+                "c9ffa866724bbe61"
+            ]
+        ]
+    },
+    {
+        "id": "c9ffa866724bbe61",
+        "type": "mqtt out",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "",
+        "topic": "gpio/out/2",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c3a9e1100001eef",
+        "x": 1000,
+        "y": 280,
         "wires": []
     }
 ]
