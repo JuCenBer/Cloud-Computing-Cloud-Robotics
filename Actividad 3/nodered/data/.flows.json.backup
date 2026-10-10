@@ -3436,7 +3436,7 @@
         "z": "89a908a1803bbf6a",
         "g": "cb27a147c7598c3a",
         "name": "0/1 → texto",
-        "func": "msg.payload = String(msg.payload) === '1' ? 'Detectado (1)' : 'No detectado (0)';\nreturn msg;",
+        "func": "msg.payload = String(msg.payload) === '1' ? 'Alcanzado (1)' : 'No alcanzado (0)';\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,

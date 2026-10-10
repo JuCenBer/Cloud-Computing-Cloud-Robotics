@@ -3,13 +3,13 @@
     "1": 0
   },
   "gpio_outputs": {
-    "2": 0,
+    "2": 1,
     "3": 0
   },
   "sensors": {
-    "direccion": 309.41983932538324,
-    "luz": 62.4584549962962,
-    "velocidad": 92.7347397597278
+    "direccion": 178.73669230667358,
+    "luz": 19.913817069603112,
+    "velocidad": 78.57364912242349
   },
   "scenario": "VehiculoAuntonomo",
   "failures": {}

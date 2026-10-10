@@ -299,11 +299,12 @@
             "0bfa6fa12120f367",
             "57159cecf24995df",
             "4649d3630e8a11ef",
-            "c9ffa866724bbe61"
+            "c9ffa866724bbe61",
+            "5c7ea809392ba852"
         ],
         "x": 54,
         "y": 99,
-        "w": 1032,
+        "w": 1092,
         "h": 382
     },
     {
@@ -3588,7 +3589,7 @@
         "y": 280,
         "wires": [
             [
-                "c9ffa866724bbe61"
+                "5c7ea809392ba852"
             ]
         ]
     },
@@ -3616,7 +3617,7 @@
         "y": 320,
         "wires": [
             [
-                "c9ffa866724bbe61"
+                "5c7ea809392ba852"
             ]
         ]
     },
@@ -3635,8 +3636,29 @@
         "correl": "",
         "expiry": "",
         "broker": "5c3a9e1100001eef",
-        "x": 1000,
+        "x": 1060,
         "y": 280,
         "wires": []
+    },
+    {
+        "id": "5c7ea809392ba852",
+        "type": "rbe",
+        "z": "89a908a1803bbf6a",
+        "g": "efe2cb98929d8697",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 990,
+        "y": 360,
+        "wires": [
+            [
+                "c9ffa866724bbe61"
+            ]
+        ]
     }
 ]
