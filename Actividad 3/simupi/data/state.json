@@ -1,0 +1,16 @@
+{
+  "gpio_inputs": {
+    "17": 0,
+    "18": 0
+  },
+  "gpio_outputs": {
+    "22": 0,
+    "24": 0
+  },
+  "sensors": {
+    "humidity": 36.89651374425452,
+    "temperature": 33.749437578861134
+  },
+  "scenario": "Greenhouse",
+  "failures": {}
+}
