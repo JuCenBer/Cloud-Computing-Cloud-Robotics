@@ -18,6 +18,7 @@ docker-compose.*.local.yml
 **/.config.runtime.json.backup
 **/.config.users.json.backup
 **/.config.nodes.json.backup
+**/.flows*.json.backup
 *.tar.gz
 backup_nodered.tar.gz
 
@@ -43,9 +44,10 @@ wsl.conf
 # ==============================================================================
 # Binarios, Ejecutables y Logs de SimuPi
 # ==============================================================================
-# Binario descargado de SimuPi
-**/simupi/simupi
+# Binario descargado de SimuPi (simupi/simupi SÍ se versiona: lo usa docker-compose.yml)
 **/bin/simupi-*
+# Estado de ejecución que SimuPi reescribe solo
+**/simupi/data/state.json
 *.log
 simupi.log
 *.tmp
