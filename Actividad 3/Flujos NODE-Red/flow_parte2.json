@@ -2690,7 +2690,7 @@
         "id": "5c3a9e1100001eef",
         "type": "mqtt-broker",
         "name": "SimuPi (Instancia A)",
-        "broker": "localhost",
+        "broker": "simupi",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,

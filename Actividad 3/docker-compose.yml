@@ -1,0 +1,31 @@
+services:
+  simupi:
+    image: debian:bookworm-slim
+    container_name: simupi
+    restart: unless-stopped
+    working_dir: /app
+    command: ["./simupi"]
+    ports:
+      - "1883:1883"
+      - "5000:5000"
+    environment:
+    - TZ=America/Argentina/Buenos_Aires
+    volumes:
+    - ./simupi:/app
+
+  nodered:
+    image: nodered/node-red:latest
+    container_name: nodered
+    restart: unless-stopped
+    depends_on:
+      - simupi
+    ports:
+      - "1880:1880"
+    environment:
+    - TZ=America/Argentina/Buenos_Aires
+    volumes:
+    - ./nodered/data:/data
+    deploy:
+      resources:
+        limits:
+          memory: 512M
