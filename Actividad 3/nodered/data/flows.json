@@ -3303,7 +3303,7 @@
         "z": "89a908a1803bbf6a",
         "g": "ve00000000000021",
         "name": "Alarma de velocidad (>80 km/h)",
-        "func": "const v = Number(msg.payload);\n\nconst activa = v > 80;\n\nflow.set('alarma', activa);\nconst estado = { payload: activa ? `VELOCIDAD EXCESIVA` : 'Normal' };\n\nreturn [estado, aviso];",
+        "func": "const v = Number(msg.payload);\n\nconst activa = v > 80;\n\nconst estado = { payload: activa ? `VELOCIDAD EXCESIVA` : 'Normal' };\n\nreturn [estado];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
