@@ -2,103 +2,125 @@
     {
         "id": "89a908a1803bbf6a",
         "type": "tab",
-        "label": "Vehiculo",
+        "label": "Vehículo autónomo (VehiculoAutonomo)",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "efe2cb98929d8697",
+        "id": "ve00000000000020",
         "type": "group",
         "z": "89a908a1803bbf6a",
+        "name": "SENSORES (MQTT → Dashboard)",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
+            "fill": "#dbe8f5",
+            "stroke": "#2e5f9e",
             "label": true,
-            "label-position": "nw",
-            "color": "#767676"
+            "color": "#000000"
         },
         "nodes": [
-            "3615da770f2b7d09",
-            "9011997a0745747b",
-            "bdac028bb3370189",
-            "75de7ce13f3f34d6",
-            "2ba9ed080859baa6",
-            "260e26089a16115a",
-            "1269f879ca6756b1",
-            "171ffbecc083d83c",
-            "9185aa88e8d9e569",
-            "17b7ac6aa3f24eb3",
-            "d0fc7e1229f668ad",
-            "5bef27a6109939ed",
-            "0bfa6fa12120f367",
-            "57159cecf24995df",
-            "4649d3630e8a11ef",
-            "c9ffa866724bbe61"
+            "ve00000000000005",
+            "ve00000000000006",
+            "ve00000000000007",
+            "ve00000000000008",
+            "ve00000000000009",
+            "ve0000000000000a",
+            "ve0000000000000b",
+            "ve0000000000000c",
+            "ve0000000000000d",
+            "ve0000000000000e"
         ],
-        "x": 54,
-        "y": 99,
-        "w": 1032,
-        "h": 382
+        "x": 5,
+        "y": 0,
+        "w": 800,
+        "h": 360
     },
     {
-        "id": "375dc293c556f4c6",
+        "id": "ve00000000000021",
         "type": "group",
         "z": "89a908a1803bbf6a",
+        "name": "AUTOMATIZACIÓN (histéresis y alarma)",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
+            "fill": "#e8e0f5",
+            "stroke": "#6a3d9a",
             "label": true,
-            "label-position": "nw",
-            "color": "#767676"
+            "color": "#000000"
         },
         "nodes": [
-            "95ac254ecb746c58",
-            "e9b9227beecdcb1d",
-            "a3b9d3a493121048",
-            "86b894c16230769f",
-            "95a2a8e61cd8624d",
-            "92ac2efb2e794893"
+            "ve0000000000000f",
+            "ve00000000000010",
+            "ve00000000000011",
+            "ve00000000000012"
         ],
-        "x": 54,
-        "y": 539,
-        "w": 512,
-        "h": 242
+        "x": 295,
+        "y": 440,
+        "w": 550,
+        "h": 180
     },
     {
-        "id": "cb27a147c7598c3a",
+        "id": "ve00000000000022",
         "type": "group",
         "z": "89a908a1803bbf6a",
+        "name": "MODO Y ACTUADORES (Dashboard → MQTT)",
         "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
+            "fill": "#fbe3d4",
+            "stroke": "#c0662a",
             "label": true,
-            "label-position": "nw",
-            "color": "#767676"
+            "color": "#000000"
         },
         "nodes": [
-            "08443980b781f1a5",
-            "fa6fc5e3b3765d17",
-            "773021891624210c",
-            "5345fa985418afd9"
+            "ve00000000000013",
+            "ve00000000000014",
+            "ve00000000000015",
+            "ve00000000000016",
+            "ve00000000000017",
+            "ve00000000000018",
+            "ve00000000000019",
+            "ve0000000000001a",
+            "ve0000000000001b"
         ],
-        "x": 54,
-        "y": 819,
-        "w": 652,
-        "h": 122
+        "x": 25,
+        "y": 640,
+        "w": 820,
+        "h": 380
     },
     {
-        "id": "3615da770f2b7d09",
+        "id": "ve00000000000023",
+        "type": "group",
+        "z": "89a908a1803bbf6a",
+        "name": "ENTRADAS (MQTT → Dashboard)",
+        "style": {
+            "fill": "#dff0d8",
+            "stroke": "#3c763d",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "ve0000000000001c",
+            "ve0000000000001d",
+            "ve0000000000001e",
+            "ve0000000000001f"
+        ],
+        "x": 15,
+        "y": 1060,
+        "w": 790,
+        "h": 120
+    },
+    {
+        "id": "ve00000000000005",
         "type": "mqtt in",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "sensor/velocidad",
+        "name": "",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "ve00000000000006",
+                "ve0000000000000b",
+                "ve00000000000007",
+                "ve00000000000010"
+            ]
+        ],
         "topic": "sensor/velocidad",
         "qos": "0",
         "datatype": "auto-detect",
@@ -107,22 +129,86 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 140,
-        "wires": [
-            [
-                "75de7ce13f3f34d6",
-                "2ba9ed080859baa6",
-                "d0fc7e1229f668ad"
-            ]
-        ]
+        "g": "ve00000000000020"
     },
     {
-        "id": "9011997a0745747b",
+        "id": "ve00000000000006",
+        "type": "ui-gauge",
+        "z": "89a908a1803bbf6a",
+        "name": "Velocidad",
+        "x": 640,
+        "y": 40,
+        "wires": [],
+        "group": "ve00000000000001",
+        "order": 1,
+        "width": 2,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Velocidad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "km/h",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#2e7d32"
+            },
+            {
+                "from": "60",
+                "color": "#f9a825"
+            },
+            {
+                "from": "80",
+                "color": "#c62828"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve00000000000007",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "name": "debug velocidad",
+        "x": 650,
+        "y": 80,
+        "wires": [],
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve00000000000008",
         "type": "mqtt in",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "sensor/luz",
+        "name": "",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "ve00000000000009",
+                "ve0000000000000b",
+                "ve0000000000000a",
+                "ve0000000000000f"
+            ]
+        ],
         "topic": "sensor/luz",
         "qos": "0",
         "datatype": "auto-detect",
@@ -131,21 +217,145 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 140,
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve00000000000009",
+        "type": "ui-gauge",
+        "z": "89a908a1803bbf6a",
+        "name": "Nivel de luz",
+        "x": 640,
+        "y": 160,
+        "wires": [],
+        "group": "ve00000000000001",
+        "order": 2,
+        "width": 2,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Nivel de luz",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#37474f"
+            },
+            {
+                "from": "40",
+                "color": "#f9a825"
+            },
+            {
+                "from": "45",
+                "color": "#fdd835"
+            }
+        ],
+        "min": "0",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve0000000000000a",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "name": "debug luz",
+        "x": 630,
+        "y": 200,
+        "wires": [],
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve0000000000000b",
+        "type": "ui-chart",
+        "z": "89a908a1803bbf6a",
+        "name": "Histórico velocidad / luz",
+        "x": 680,
+        "y": 120,
+        "wires": [],
+        "group": "ve00000000000004",
+        "label": "Velocidad y nivel de luz",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "5",
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "interpolation": "linear",
+        "colors": [
+            "#1f77b4",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5",
+            "#ff0000"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 5,
+        "className": "",
+        "g": "ve00000000000020"
+    },
+    {
+        "id": "ve0000000000000c",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "name": "",
+        "x": 150,
         "y": 280,
         "wires": [
             [
-                "260e26089a16115a",
-                "1269f879ca6756b1"
+                "ve0000000000000d",
+                "ve0000000000000e"
             ]
-        ]
-    },
-    {
-        "id": "bdac028bb3370189",
-        "type": "mqtt in",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "sensor/direccion",
+        ],
         "topic": "sensor/direccion",
         "qos": "0",
         "datatype": "auto-detect",
@@ -154,196 +364,37 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 160,
-        "y": 400,
-        "wires": [
-            [
-                "171ffbecc083d83c",
-                "9185aa88e8d9e569"
-            ]
-        ]
+        "g": "ve00000000000020"
     },
     {
-        "id": "75de7ce13f3f34d6",
+        "id": "ve0000000000000d",
         "type": "ui-gauge",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Velocidad",
-        "group": "4292c21a6b323746",
-        "order": 1,
-        "value": "payload",
-        "valueType": "msg",
-        "width": 3,
-        "height": 3,
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "Velocidad",
-        "alwaysShowTitle": false,
-        "floatingTitlePosition": "top-left",
-        "units": "kph",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#29c733",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "50",
-                "color": "#ffbd2e",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "80",
-                "color": "#f92424",
-                "text": "",
-                "textType": "label"
-            }
-        ],
-        "min": "0",
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 420,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2ba9ed080859baa6",
-        "type": "debug",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "velocidad debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 440,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "260e26089a16115a",
-        "type": "ui-gauge",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Nivel de Luz",
-        "group": "4292c21a6b323746",
-        "order": 1,
-        "value": "payload",
-        "valueType": "msg",
-        "width": 3,
-        "height": 3,
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "Nivel de Luz",
-        "alwaysShowTitle": false,
-        "floatingTitlePosition": "top-left",
-        "units": "%",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#c72929",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "40",
-                "color": "#ffbd2e",
-                "text": "",
-                "textType": "label"
-            },
-            {
-                "from": "50",
-                "color": "#24f93d",
-                "text": "",
-                "textType": "label"
-            }
-        ],
-        "min": "0",
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 430,
-        "y": 280,
-        "wires": [
-            [
-                "0bfa6fa12120f367"
-            ]
-        ]
-    },
-    {
-        "id": "1269f879ca6756b1",
-        "type": "debug",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "luz debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 420,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "171ffbecc083d83c",
-        "type": "ui-gauge",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
         "name": "Dirección",
-        "group": "4292c21a6b323746",
-        "order": 1,
-        "value": "payload",
-        "valueType": "msg",
-        "width": 3,
+        "x": 640,
+        "y": 260,
+        "wires": [],
+        "group": "ve00000000000001",
+        "order": 3,
+        "width": 2,
         "height": 3,
         "gtype": "gauge-34",
         "gstyle": "needle",
         "title": "Dirección",
         "alwaysShowTitle": false,
         "floatingTitlePosition": "top-left",
-        "units": "%",
+        "units": "°",
         "icon": "",
         "prefix": "",
         "suffix": "",
         "segments": [
             {
                 "from": "-180",
-                "color": "#995cd6",
-                "text": "",
-                "textType": "label"
+                "color": "#5c6bc0"
             },
             {
                 "from": "0",
-                "color": "#1baede",
-                "text": "",
-                "textType": "label"
+                "color": "#26a69a"
             }
         ],
         "min": "-180",
@@ -354,268 +405,100 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 420,
-        "y": 400,
-        "wires": [
-            []
-        ]
+        "g": "ve00000000000020"
     },
     {
-        "id": "9185aa88e8d9e569",
+        "id": "ve0000000000000e",
         "type": "debug",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "dirección debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 440,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "95ac254ecb746c58",
-        "type": "ui-switch",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "Activar Luces",
-        "label": "Activar Luces",
-        "group": "0b75aed34a62a278",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 160,
-        "y": 580,
-        "wires": [
-            [
-                "e9b9227beecdcb1d",
-                "a3b9d3a493121048"
-            ]
-        ]
-    },
-    {
-        "id": "e9b9227beecdcb1d",
-        "type": "mqtt out",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "",
-        "topic": "gpio/out/2",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "5c3a9e1100001eef",
-        "x": 440,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "a3b9d3a493121048",
-        "type": "debug",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "luces debug",
+        "name": "debug dirección",
+        "x": 650,
+        "y": 320,
+        "wires": [],
         "active": true,
         "tosidebar": true,
         "console": false,
-        "tostatus": false,
+        "tostatus": true,
         "complete": "payload",
         "targetType": "msg",
-        "statusVal": "",
+        "statusVal": "payload",
         "statusType": "auto",
-        "x": 450,
-        "y": 620,
-        "wires": []
+        "g": "ve00000000000020"
     },
     {
-        "id": "86b894c16230769f",
-        "type": "ui-switch",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "Modo Ciudad",
-        "label": "Modo Ciudad",
-        "group": "0b75aed34a62a278",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "switch",
-        "onvalue": "1",
-        "onvalueType": "num",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "0",
-        "offvalueType": "num",
-        "officon": "",
-        "offcolor": "",
-        "x": 150,
-        "y": 700,
-        "wires": [
-            [
-                "95a2a8e61cd8624d",
-                "92ac2efb2e794893"
-            ]
-        ]
-    },
-    {
-        "id": "95a2a8e61cd8624d",
-        "type": "mqtt out",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "",
-        "topic": "gpio/out/3",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "5c3a9e1100001eef",
-        "x": 440,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "92ac2efb2e794893",
-        "type": "debug",
-        "z": "89a908a1803bbf6a",
-        "g": "375dc293c556f4c6",
-        "name": "modo debug",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 450,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "08443980b781f1a5",
-        "type": "ui-text",
-        "z": "89a908a1803bbf6a",
-        "g": "cb27a147c7598c3a",
-        "group": "fcec81963cbf486d",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "Destino Alcanzado",
-        "label": "Destino Alcanzado",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "wrapText": false,
-        "className": "",
-        "value": "payload",
-        "valueType": "msg",
-        "x": 590,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "fa6fc5e3b3765d17",
-        "type": "mqtt in",
-        "z": "89a908a1803bbf6a",
-        "g": "cb27a147c7598c3a",
-        "name": "",
-        "topic": "gpio/in/1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5c3a9e1100001eef",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 140,
-        "y": 860,
-        "wires": [
-            [
-                "5345fa985418afd9",
-                "773021891624210c"
-            ]
-        ]
-    },
-    {
-        "id": "773021891624210c",
-        "type": "debug",
-        "z": "89a908a1803bbf6a",
-        "g": "cb27a147c7598c3a",
-        "name": "destino debug",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "5345fa985418afd9",
+        "id": "ve0000000000000f",
         "type": "function",
         "z": "89a908a1803bbf6a",
-        "g": "cb27a147c7598c3a",
-        "name": "0/1 → texto",
-        "func": "msg.payload = String(msg.payload) === '1' ? 'Alcanzado (1)' : 'No alcanzado (0)';\nreturn msg;",
+        "name": "Histéresis luces (<40 ON, >45 OFF)",
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "ve00000000000017",
+                "ve00000000000016",
+                "ve00000000000018"
+            ]
+        ],
+        "func": "// Solo actúa en modo AUTOMÁTICO y solo publica cuando el estado cambia.\nif (flow.get('modo') !== 'AUTO') return null;\nconst luz = Number(msg.payload);\nif (isNaN(luz)) return null;\nconst actual = flow.get('luces');\nlet nuevo = actual;\nif (luz < 40) nuevo = 1;\nelse if (luz > 45) nuevo = 0;\nelse if (actual !== 0 && actual !== 1) nuevo = 0; // banda muerta (40-45) sin estado previo\nif (nuevo === actual) return null;\nflow.set('luces', nuevo);\nnode.status({ fill: nuevo ? 'yellow' : 'grey', shape: 'dot', text: `luz ${luz.toFixed(1)}% → luces ${nuevo ? 'ON' : 'OFF'}` });\nreturn { payload: String(nuevo) };",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 860,
-        "wires": [
-            [
-                "08443980b781f1a5"
-            ]
-        ]
+        "g": "ve00000000000021"
     },
     {
-        "id": "17b7ac6aa3f24eb3",
+        "id": "ve00000000000010",
+        "type": "function",
+        "z": "89a908a1803bbf6a",
+        "name": "Alarma de velocidad (>80 km/h)",
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "ve00000000000011"
+            ],
+            [
+                "ve00000000000012"
+            ]
+        ],
+        "func": "const v = Number(msg.payload);\nif (isNaN(v)) return null;\nconst activa = v > 80;\nconst previa = flow.get('alarma') === true;\nflow.set('alarma', activa);\nconst estado = { payload: activa ? `VELOCIDAD EXCESIVA (${v.toFixed(1)} km/h)` : 'Normal' };\n// La notificación emergente solo se muestra al activarse la alarma.\nconst aviso = (activa && !previa) ? { payload: `Alarma: la velocidad (${v.toFixed(1)} km/h) supera los 80 km/h` } : null;\nnode.status({ fill: activa ? 'red' : 'green', shape: 'dot', text: activa ? 'ALARMA' : 'normal' });\nreturn [estado, aviso];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "g": "ve00000000000021"
+    },
+    {
+        "id": "ve00000000000011",
+        "type": "ui-text",
+        "z": "89a908a1803bbf6a",
+        "name": "Alarma de velocidad",
+        "x": 720,
+        "y": 540,
+        "wires": [],
+        "group": "ve00000000000003",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Alarma de velocidad",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": false,
+        "className": "",
+        "g": "ve00000000000021"
+    },
+    {
+        "id": "ve00000000000012",
         "type": "ui-notification",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
         "ui": "ab4fe6737c7cd34d",
         "position": "top center",
         "colorDefault": false,
@@ -629,175 +512,327 @@
         "confirmText": "Confirm",
         "raw": false,
         "className": "",
-        "name": "",
-        "x": 900,
-        "y": 220,
+        "name": "Aviso de alarma",
+        "x": 700,
+        "y": 580,
         "wires": [
             []
-        ]
+        ],
+        "g": "ve00000000000021"
     },
     {
-        "id": "d0fc7e1229f668ad",
-        "type": "switch",
+        "id": "ve00000000000013",
+        "type": "inject",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Control Velocidad",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
+        "name": "inicio: modo AUTO",
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "ve00000000000014",
+                "ve00000000000015"
+            ]
+        ],
+        "props": [
             {
-                "t": "gte",
-                "v": "80",
-                "vt": "num"
+                "p": "payload"
             }
         ],
-        "checkall": "true",
-        "repair": false,
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve00000000000014",
+        "type": "ui-switch",
+        "z": "89a908a1803bbf6a",
+        "name": "Modo automático",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "ve00000000000015"
+            ]
+        ],
+        "label": "Modo automático",
+        "group": "ve00000000000002",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "#2e7d32",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "#9e9e9e",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve00000000000015",
+        "type": "function",
+        "z": "89a908a1803bbf6a",
+        "name": "guardar modo",
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "ve00000000000016"
+            ]
+        ],
+        "func": "const auto = msg.payload === true || msg.payload === 'true';\nflow.set('modo', auto ? 'AUTO' : 'MANUAL');\n// Al volver a AUTO se olvida el estado para que la histéresis re-evalúe con la próxima lectura.\nif (auto) flow.set('luces', null);\n// El switch de luces solo se puede usar en modo MANUAL.\nreturn { enabled: !auto };",
         "outputs": 1,
-        "x": 450,
-        "y": 220,
-        "wires": [
-            [
-                "5bef27a6109939ed"
-            ]
-        ]
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "g": "ve00000000000022"
     },
     {
-        "id": "5bef27a6109939ed",
-        "type": "change",
+        "id": "ve00000000000016",
+        "type": "ui-switch",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Establece mensaje",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "\"Alerta. Velocidad alta alcanzada\"",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 670,
-        "y": 220,
+        "name": "Luces (manual) · GPIO 22",
+        "x": 170,
+        "y": 820,
         "wires": [
             [
-                "17b7ac6aa3f24eb3"
+                "ve00000000000017",
+                "ve00000000000018"
             ]
-        ]
-    },
-    {
-        "id": "0bfa6fa12120f367",
-        "type": "switch",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Control Luz",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "lte",
-                "v": "40",
-                "vt": "num"
-            },
-            {
-                "t": "gte",
-                "v": "45",
-                "vt": "num"
-            }
         ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 650,
-        "y": 280,
-        "wires": [
-            [
-                "57159cecf24995df"
-            ],
-            [
-                "4649d3630e8a11ef"
-            ]
-        ]
+        "label": "Luces (manual) · GPIO 22",
+        "group": "ve00000000000002",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "#2e7d32",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "#9e9e9e",
+        "g": "ve00000000000022"
     },
     {
-        "id": "57159cecf24995df",
-        "type": "change",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Prende Luz",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 280,
-        "wires": [
-            [
-                "c9ffa866724bbe61"
-            ]
-        ]
-    },
-    {
-        "id": "4649d3630e8a11ef",
-        "type": "change",
-        "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
-        "name": "Apaga Luz",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 320,
-        "wires": [
-            [
-                "c9ffa866724bbe61"
-            ]
-        ]
-    },
-    {
-        "id": "c9ffa866724bbe61",
+        "id": "ve00000000000017",
         "type": "mqtt out",
         "z": "89a908a1803bbf6a",
-        "g": "efe2cb98929d8697",
         "name": "",
-        "topic": "gpio/out/2",
-        "qos": "2",
-        "retain": "",
+        "x": 720,
+        "y": 800,
+        "wires": [],
+        "topic": "gpio/out/22",
+        "qos": "0",
+        "retain": "false",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
         "correl": "",
         "expiry": "",
         "broker": "5c3a9e1100001eef",
-        "x": 1000,
-        "y": 280,
-        "wires": []
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve00000000000018",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "name": "debug luces",
+        "x": 710,
+        "y": 860,
+        "wires": [],
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve00000000000019",
+        "type": "ui-switch",
+        "z": "89a908a1803bbf6a",
+        "name": "Destino alcanzado · GPIO 27",
+        "x": 180,
+        "y": 940,
+        "wires": [
+            [
+                "ve0000000000001a",
+                "ve0000000000001b"
+            ]
+        ],
+        "label": "Destino alcanzado · GPIO 27",
+        "group": "ve00000000000002",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "#2e7d32",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "#9e9e9e",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve0000000000001a",
+        "type": "mqtt out",
+        "z": "89a908a1803bbf6a",
+        "name": "",
+        "x": 720,
+        "y": 940,
+        "wires": [],
+        "topic": "gpio/out/27",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5c3a9e1100001eef",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve0000000000001b",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "name": "debug destino",
+        "x": 710,
+        "y": 980,
+        "wires": [],
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "g": "ve00000000000022"
+    },
+    {
+        "id": "ve0000000000001c",
+        "type": "mqtt in",
+        "z": "89a908a1803bbf6a",
+        "name": "",
+        "x": 140,
+        "y": 1100,
+        "wires": [
+            [
+                "ve0000000000001d",
+                "ve0000000000001f"
+            ]
+        ],
+        "topic": "gpio/in/17",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5c3a9e1100001eef",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "g": "ve00000000000023"
+    },
+    {
+        "id": "ve0000000000001d",
+        "type": "function",
+        "z": "89a908a1803bbf6a",
+        "name": "0/1 → texto obstáculo",
+        "x": 400,
+        "y": 1100,
+        "wires": [
+            [
+                "ve0000000000001e"
+            ]
+        ],
+        "func": "msg.payload = String(msg.payload) === '1' ? 'OBSTÁCULO DETECTADO' : 'Camino libre';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "g": "ve00000000000023"
+    },
+    {
+        "id": "ve0000000000001e",
+        "type": "ui-text",
+        "z": "89a908a1803bbf6a",
+        "name": "Obstáculo (GPIO 17)",
+        "x": 680,
+        "y": 1100,
+        "wires": [],
+        "group": "ve00000000000003",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Obstáculo (GPIO 17)",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "wrapText": false,
+        "className": "",
+        "g": "ve00000000000023"
+    },
+    {
+        "id": "ve0000000000001f",
+        "type": "debug",
+        "z": "89a908a1803bbf6a",
+        "name": "debug obstáculo",
+        "x": 390,
+        "y": 1140,
+        "wires": [],
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "g": "ve00000000000023"
     },
     {
         "id": "5c3a9e1100001eef",
@@ -831,49 +866,60 @@
         "sessionExpiry": ""
     },
     {
-        "id": "4292c21a6b323746",
+        "id": "ve00000000000001",
         "type": "ui-group",
         "name": "Sensores",
         "page": "5eec0f11f05bf14e",
-        "width": 6,
-        "height": 1,
-        "order": -1,
+        "width": "6",
+        "height": "1",
+        "order": 1,
         "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false",
-        "groupType": "default",
-        "tab": ""
+        "groupType": "default"
     },
     {
-        "id": "0b75aed34a62a278",
+        "id": "ve00000000000002",
         "type": "ui-group",
-        "name": "Actuadores",
+        "name": "Modo y actuadores",
         "page": "5eec0f11f05bf14e",
-        "width": 6,
-        "height": 1,
-        "order": -1,
+        "width": "6",
+        "height": "1",
+        "order": 2,
         "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false",
-        "groupType": "default",
-        "tab": ""
+        "groupType": "default"
     },
     {
-        "id": "fcec81963cbf486d",
+        "id": "ve00000000000003",
         "type": "ui-group",
-        "name": "Entradas",
+        "name": "Alarmas y entradas",
         "page": "5eec0f11f05bf14e",
-        "width": 6,
-        "height": 1,
-        "order": -1,
+        "width": "6",
+        "height": "1",
+        "order": 3,
         "showTitle": true,
         "className": "",
         "visible": "true",
         "disabled": "false",
-        "groupType": "default",
-        "tab": ""
+        "groupType": "default"
+    },
+    {
+        "id": "ve00000000000004",
+        "type": "ui-group",
+        "name": "Histórico",
+        "page": "5eec0f11f05bf14e",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
     },
     {
         "id": "ab4fe6737c7cd34d",
@@ -898,10 +944,10 @@
     {
         "id": "5eec0f11f05bf14e",
         "type": "ui-page",
-        "name": "Vehiculo",
+        "name": "Vehículo autónomo",
         "ui": "ab4fe6737c7cd34d",
-        "path": "/page4",
-        "icon": "home",
+        "path": "/vehiculo",
+        "icon": "car",
         "layout": "grid",
         "theme": "cca9ccd2dd6165f2",
         "breakpoints": [
@@ -927,7 +973,7 @@
             }
         ],
         "tabs": [],
-        "order": -1,
+        "order": 4,
         "className": "",
         "visible": "true",
         "disabled": "false"
