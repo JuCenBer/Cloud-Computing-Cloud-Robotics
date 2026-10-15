@@ -1,0 +1,43 @@
+{
+  "inputs": [
+    17
+  ],
+  "outputs": [
+    22,
+    27
+  ],
+  "sensors": {
+    "direccion": {
+      "mode": "walk",
+      "min": -180,
+      "max": 180,
+      "interval": 1,
+      "step": 5,
+      "unit": "°",
+      "pin": 6
+    },
+    "luz": {
+      "mode": "wave",
+      "min": 0,
+      "max": 100,
+      "interval": 1,
+      "period": 60,
+      "unit": "%",
+      "pin": 5
+    },
+    "velocidad": {
+      "mode": "walk",
+      "min": 0,
+      "max": 100,
+      "interval": 1,
+      "step": 5,
+      "unit": "km/h",
+      "pin": 4
+    }
+  },
+  "aliases": {
+    "17": "Obstáculo detectado",
+    "22": "Luces",
+    "27": "Destino alcanzado"
+  }
+}
